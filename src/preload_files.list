@@ -1,0 +1,4 @@
+# just list all files to be included on a separate line
+config.php
+vendor/SourcePot/Http/Response.php
+vendor/SourcePot/Database.php
