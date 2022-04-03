@@ -13,6 +13,12 @@ services:
       dockerfile: PHP.Dockerfile
     volumes:
       - ./src:/var/www
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USER=demo_user
+      - DB_PASS=secure_password
+      - DB_DATABASE=demo
   mysql:
     image: mysql:8
     volumes:

@@ -26,11 +26,6 @@ This is where we configure the pre-loading script.  `opcache.preload` must point
 The preloading file.  This file just reads a list of other files and imports each one using the `opcache_compile_file` function.  This compiles the files into bytecode and loads that in memory.  It doesn't execute anything in the files (so side-effects shouldn't be possible).
 
 
-`src/config.php`
-
-An example Config class with constant members.  As they are `const`, they cannot use environment variables, they must be fixed strings.
-
-
 `src/vendor/SourcePot/Database.php`
 
 An example Datbase singleton class.  Simply connects to the database when requested and uses the Config classes members for connection parameters.

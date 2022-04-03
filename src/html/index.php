@@ -7,4 +7,4 @@ $query = 'SHOW DATABASES';
 $db = Database::getInstance();
 (new Response)
     ->setHeader('content-type', 'application/json')
-    ->send($db->run($query));
+    ->send(json_encode($db->run($query)->fetchAll()));
