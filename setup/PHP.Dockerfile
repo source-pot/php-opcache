@@ -7,4 +7,3 @@ COPY opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 
 # add database functionality
 RUN docker-php-ext-install pdo pdo_mysql
-RUN pecl install redis && docker-php-ext-enable redis
